@@ -7,11 +7,12 @@
  *
  * Description: print the last digit of n status
  *
- * Return Always success (0)
+ *
+ * Return: Always success (0)
 */
 int main(void)
 {
-	int n, last_digit;
+	int n, last_dig;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
