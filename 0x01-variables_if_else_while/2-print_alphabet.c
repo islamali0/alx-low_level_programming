@@ -1,21 +1,22 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  *
  * Discription: print all alphabet letters
  *
  * Return: Always 0 (Success)
- */
+*/
 
 
 int main(void)
 {
-	char ch = "a";
+	char alphabet = "a";
 
-	while (ch <= "z")
+	while (alphabet <= "z")
 	{
-		putchar(ch);
-		ch++;
+		putchar(alphabet);
+		alphabet++;
 	}
 	putchar("\n");
 	return (0);
