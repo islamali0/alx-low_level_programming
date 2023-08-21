@@ -2,16 +2,20 @@
 /**
  * main - Entry point
  *
+ * Discription: print all alphabet letters
+ *
  * Return: Always 0 (Success)
  */
 
 
 int main(void)
 {
-	for (char alphabet = 'a'; alphabet <= 'z' ; alphabet++)
+	char ch = "a";
+
+	while (ch <= "z")
 	{
-		putchar(alphabet);
+		putchar(ch);
+		ch++;
 	}
-	putchar('\n');
-	return (0);
+	putchar("\n")
 }
