@@ -7,8 +7,8 @@
  */
 int main(void)
 {
-	int = number;
-	char = alphabet;
+	int number;
+	char alphabet;
 
 	for (number = 0; number <= 10; number++)
 		putchar((number % 10) + '0');
