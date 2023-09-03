@@ -1,19 +1,16 @@
-# include <stdio.h>
- 
-// Function to print reverse of
-// the passed string
-void reverse(char *str)
-{
-  if (*str)
-  {
-    reverse(str + 1);
-    printf("%c", *str);
-  }
+#include <stdio.h>
+void reverseSentence();
+int main() {
+    printf("\nColton Walker");
+    reverseSentence();
+    return 0;
 }
 
-int main()
-{
-  char a[] = "\nColton Walker";
-  reverse(a);
-  return 0;
+void reverseSentence() {
+    char c;
+    scanf("%c", &c);
+    if (c != '\n') {
+        reverseSentence();
+        printf("%c", c);
+    }
 }
