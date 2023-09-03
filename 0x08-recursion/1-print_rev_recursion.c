@@ -1,7 +1,8 @@
-#include <stdio.h>
+#include <main.h>
+
 void reverseSentence();
 int main() {
-    printf("\nColton Walker");
+    printf("Enter a sentence: ");
     reverseSentence();
     return 0;
 }
