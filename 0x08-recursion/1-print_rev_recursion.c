@@ -1,17 +1,14 @@
-#include <main.h>
+#include "main.h"
 
-void reverseSentence();
-int main() {
-    printf("Enter a sentence: ");
-    reverseSentence();
-    return 0;
-}
-
-void reverseSentence() {
-    char c;
-    scanf("%c", &c);
-    if (c != '\n') {
-        reverseSentence();
-        printf("%c", c);
-    }
+/**
+ * _puts_recursion - Prints a string, followed by a new line.
+ * @s: The string to be printed.
+ */
+void _puts_recursion(char *s)
+{
+        if (*s)
+        {
+                _putchar(*s);
+                _puts_rev_recursion(s + 1);
+	}
 }
